@@ -11,7 +11,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import me from '../images/avatar.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -158,9 +158,9 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Andy Tan
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>Software Engineer with demonstrated experience </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -174,32 +174,32 @@ const Index = () => (
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="PROJECT 1"
+              link="https://www.linkedin.com/in/andyl7an/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              This project 1 is blah blah blah
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
+              title="PROJECT 2"
+              link="https://www.linkedin.com/in/andyl7an/"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              This project 2 is blah blah blah
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title="PROJECT 3"
+              link="https://www.linkedin.com/in/andyl7an/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              This project 3 is blah blah blah
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              title="PROJECT 4"
+              link="https://www.linkedin.com/in/andyl7an/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              This project 4 is blah blah blah
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -250,18 +250,13 @@ const Index = () => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={me} alt="Andy Tan" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+            i think its hilarious u kids talking shit about Andy. u wouldnt say this shit to him at lan, hes jacked. not only that but he wears the freshest clothes, eats at the chillest restaurants and hangs out with the hottest dudes. yall are pathetic lol the closest origin i could find is a csgo forum, but i'm having trouble interpreting it.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+          What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
           </AboutDesc>
         </Inner>
       </Content>
@@ -285,9 +280,8 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Connect with me on <a href="https://www.linkedin.com/in/andyl7an/">LinkedIn</a> or find me on 
+            <a href="https://www.instagram.com/lekoarts.de/"> Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
@@ -315,3 +309,4 @@ const Index = () => (
 );
 
 export default Index;
+
