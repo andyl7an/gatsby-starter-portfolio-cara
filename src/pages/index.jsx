@@ -281,13 +281,9 @@ const Index = () => (
           <Title>Get in touch</Title>
           <ContactText>
             Connect with me on <a href="https://www.linkedin.com/in/andyl7an/">LinkedIn</a> or find me on 
-            <a href="https://www.instagram.com/lekoarts.de/"> Instagram</a>
+            <a href="https://www.instagram.com/7angent/?hl=en"> Instagram</a>
           </ContactText>
         </Inner>
-        <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
-        </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
         <UpDown>
