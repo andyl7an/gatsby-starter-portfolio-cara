@@ -27,7 +27,11 @@ const Divider = styled(ParallaxLayer)`
 `;
 
 const DividerMiddle = styled(Divider)`
-  clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
+clip-path: polygon(0 0, 100% 18%, 100% 88%, 0 70%);
+`;
+
+const DividerTop = styled(Divider)`
+  clip-path: polygon(0 0, 100% 0%, 100% 33%, 0 55%;
 `;
 
 const Content = styled(ParallaxLayer)`
@@ -43,12 +47,12 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl font-serif text-grey-darkest mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('text-4xl lg:text-4xl font-serif text-grey-darkest mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
@@ -64,7 +68,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-4xl font-sans text-grey-dark mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -108,11 +112,11 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-grey text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
 `;
 
 const ContactText = styled.p`
-  ${tw('text-grey-light font-sans text-xl md:text-2xl lg:text-3xl')};
+  ${tw('text-grey font-sans text-xl md:text-2xl lg:text-3xl')};
   a {
     color: #e07628;
     text-decoration: none;
@@ -131,7 +135,8 @@ const Index = () => (
   <React.Fragment>
     <SEO />
     <Parallax pages={5}>
-      <Divider speed={0.2} offset={0}>
+    
+      {/* <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
           <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
@@ -157,7 +162,7 @@ const Index = () => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
-      </Divider>
+      </Divider> */}
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
@@ -166,12 +171,14 @@ const Index = () => (
           <Subtitle>Software Engineer from San Francisco living in the Pacific Northwest</Subtitle>
         </Hero>
       </Content>
+    
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        bg="linear-gradient(to right, blueviolet 0%, DeepSkyBlue 100%)"
         speed={-0.2}
         offset={1.1}
         factor={2}
-      />
+      >
+      </DividerMiddle>
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title>Projects</Title>
@@ -229,7 +236,7 @@ const Index = () => (
         <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
       </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider bg="linear-gradient(to right, DeepSkyBlue 0%, aquamarine 100%)" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
@@ -255,15 +262,14 @@ const Index = () => (
           <AboutHero>
             <Avatar src={me} alt="Andy Tan" />
             <AboutSub>
-            i think its hilarious u kids talking shit about Andy. u wouldnt say this shit to him at lan, hes jacked. not only that but he wears the freshest clothes, eats at the chillest restaurants and hangs out with the hottest dudes. yall are pathetic lol
+            i think its hilarious u kids talking shit about Andy. u wouldnt say this shit to him at lan, hes jacked. not only that but he wears the freshest clothes, eats at the chillest restaurants and hangs out with the hottest dudes. yall are pathetic lol 
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-          What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#5532ff" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
