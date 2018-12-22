@@ -14,6 +14,9 @@ import triangle from '../images/triangle.svg';
 import me from '../images/avatar.jpg';
 import '../styles/global';
 
+import './index.scss';
+
+
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
   background: ${props => props.bg};
@@ -160,7 +163,7 @@ const Index = () => (
           <BigTitle>
             Andy Tan
           </BigTitle>
-          <Subtitle>Software Engineer with demonstrated experience </Subtitle>
+          <Subtitle>Software Engineer from San Francisco living in the Pacific Northwest</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -252,7 +255,7 @@ const Index = () => (
           <AboutHero>
             <Avatar src={me} alt="Andy Tan" />
             <AboutSub>
-            i think its hilarious u kids talking shit about Andy. u wouldnt say this shit to him at lan, hes jacked. not only that but he wears the freshest clothes, eats at the chillest restaurants and hangs out with the hottest dudes. yall are pathetic lol the closest origin i could find is a csgo forum, but i'm having trouble interpreting it.
+            i think its hilarious u kids talking shit about Andy. u wouldnt say this shit to him at lan, hes jacked. not only that but he wears the freshest clothes, eats at the chillest restaurants and hangs out with the hottest dudes. yall are pathetic lol
             </AboutSub>
           </AboutHero>
           <AboutDesc>
